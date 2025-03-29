@@ -273,25 +273,6 @@ section {
     }
 }
 
-/* Responsive Ayarlar */
-@media (max-width: 992px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about-image {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        padding: 80px 0;
-        min-height: auto;
-    }
-}
-
 .about-text {
     flex: 20;
     font-size: 18px;
@@ -617,30 +598,7 @@ footer {
     gap: 20px;
     justify-content: center;
 }
-@media (max-width: 400px) {
-    .project-card {
-        border-radius: 0;
-        margin-left: -15px;
-        margin-right: -15px;
-        width: calc(100% + 30px);
-    }
-}
-/* Responsive Ayarlar */
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .project-card {
-        width: 100%;
-        max-width: 95%;
-        margin: 0 auto;
-    }
-
-    .project-info {
-        text-align: center;
-    }
-}
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -671,16 +629,6 @@ footer {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
-}
-
-.project-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
-    z-index: 1;
 }
 
 .project-card::before {
@@ -817,126 +765,34 @@ footer {
 /* Proje Kartları İçin Responsive Düzeltmeler */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Mobilde tek sütun */
-        gap: 15px;
+        grid-template-columns: 1fr;
     }
 
     .project-card {
         width: 100%;
         max-width: 95%;
-        margin: 0 auto; /* Kartların hizalanması için */
-        border-radius: 10px;
-    }
-
-    .project-image {
-        height: 200px; /* Mobilde daha iyi görünüm */
+        margin: 0 auto;
     }
 
     .project-info {
-        padding: 20px;
-        text-align: center; /* Mobilde içerik ortalansın */
-    }
-
-    .project-title {
-        font-size: 1.2rem; /* Başlık mobilde daha küçük olabilir */
-    }
-
-    .project-description {
-        font-size: 0.95rem; /* Yazı boyutunu optimize ettik */
-    }
-
-    .view-btn {
-        width: 100%;
-        padding: 10px 20px;
+        text-align: center;
     }
 }
 
 /* Küçük Telefonlar İçin (400px altı) */
 @media (max-width: 400px) {
-    .projects-section {
-        padding: 50px 0;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .project-card {
         width: 100%;
-        border-radius: 8px;
-    }
-
-    .project-image {
-        height: 180px;
-    }
-
-    .project-title {
-        font-size: 1.1rem;
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     .project-info {
-        padding: 15px;
-    }
-}
-
-
-/* Responsive Tasarım */
-@media (max-width: 992px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .projects-section {
-        padding: 70px 0;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .project-image {
-        height: 200px;
-    }
-}
-
-@media (max-width: 576px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-card {
-        max-width: 100%;
-    }
-}
-/* Responsive Ayarlar */
-@media (max-width: 768px) {
-    .projects-section {
-        padding: 70px 0;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-card {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .projects-section {
-        padding: 50px 0;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-    }
-    
-    .project-content {
-        padding: 15px;
+        text-align: center;
     }
 }
 
