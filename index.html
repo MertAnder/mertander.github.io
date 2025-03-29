@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Mert Ander - Portfolyo</title>
-        <link rel="stylesheet" href="./style.css">
-        <!-- Mobil dokunmatik etkinlikleri için -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="HandheldFriendly" content="true">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Ander - Portfolyo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
 
 <!-- Navbar -->
@@ -17,7 +14,7 @@
     <div class="container">
         <a href="#" class="logo">
             <span class="code-tag">&lt;</span>MertAnder<span class="code-tag">/&gt;</span>
-          </a>
+        </a>
         <button class="mobile-menu-btn" aria-label="Menu">
             <span class="menu-icon"></span>
         </button>
@@ -30,10 +27,9 @@
     </div>
 </header>
 
-<!-- Ana Bölüm -->
+<!-- Hero Section -->
 <section class="hero" id="home">
     <canvas id="particle-canvas"></canvas>
-    
     <div class="hero-content">
         <div class="interactive-title">
             <span class="letter">M</span>
@@ -54,128 +50,118 @@
             <span class="letter">r</span>
             <span class="letter">t</span>
         </div>
+        <p class="hero-subtitle">Frontend Developer & UI/UX Tasarımcı</p>
     </div>
-
-    <a href="#projects" class="scroll-down">
+    <a href="#about" class="scroll-down">
         <span>Keşfet</span>
         <i class="fas fa-chevron-down"></i>
     </a>
 </section>
-<section id="about" class="about-section">
+
+<!-- About Section -->
+<section class="about-section" id="about">
     <div class="container">
-        <h2 class="section-title" style="padding: 50px;">Hakkımda</h2>
-        <div class="about-content" style="padding-bottom: 200px;">
+        <h2 class="section-title">Hakkımda</h2>
+        <div class="about-content">
             <div class="about-text">
-                <h3>Ben Kimim?</h3>
-                <p>Elektrik ve Elektronik Mühendisliği öğrencisiyim. Otomotiv teknolojilerine özel bir ilgim var ve bu alanda kendimi sürekli geliştiriyorum. Yenilikçi projeler üretmek ve teknolojiyi kullanarak sorunlara çözüm bulmak benim tutkum.</p>
+                <p>Merhaba! Ben Mert, tutkulu bir frontend developer ve UI/UX tasarımcısıyım. Kullanıcı dostu, modern ve etkileyici web deneyimleri oluşturmayı seviyorum.</p>
+                <p>5 yılı aşkın süredir web teknolojileri üzerinde çalışıyorum ve sürekli olarak yeni teknolojiler öğrenmeye devam ediyorum.</p>
+                <div class="skills">
+                    <h3>Yeteneklerim</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
             </div>
             <div class="about-image">
-                <div class="image-frame"></div>
+                <div class="image-frame">
+                    <img src="https://via.placeholder.com/400x400" alt="Mert Ander" class="profile-image">
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!--Projerler-->
-<section id="projects" class="projects-section">
+
+<!-- Projects Section -->
+<section class="projects-section" id="projects">
     <div class="container">
-        <div class="section-header" style="padding-right: 150px;">
-            <h2 class="section-title" >Projelerim</h2>
-            <p class="section-subtitle">Yaptığım bazı çalışmalar ve projeler</p>
-        </div>
-        
+        <h2 class="section-title">Projelerim</h2>
         <div class="projects-grid">
-            <!-- Proje 1 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/project1.jpg" alt="Akıllı Otomotiv Sistemi" loading="lazy">
-                    <div class="project-hover">
-                        <a href="#" class="view-btn">Detayları Gör</a>
-                    </div>
+                    <img src="https://via.placeholder.com/600x400" alt="Proje 1">
                 </div>
                 <div class="project-info">
-                    <div class="project-meta">
-                        <span class="project-category">Elektronik</span>
-                        <span class="project-date">2023</span>
+                    <h3>E-Ticaret Sitesi</h3>
+                    <p>React ve Node.js kullanılarak geliştirilmiş modern bir e-ticaret platformu.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
                     </div>
-                    <h3 class="project-title">Akıllı Otomotiv Sistemi</h3>
-                    <p class="project-description">Araç içi IoT entegrasyonu ile akıllı kontrol sistemi geliştirilmesi</p>
-                    <div class="project-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">Arduino</span>
-                        <span class="tag">IoT</span>
-                    </div>
+                    <a href="#" class="project-link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
-            <!-- Proje 2 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/project2.jpg" alt="Enerji Yönetim Sistemi" loading="lazy">
-                    <div class="project-hover">
-                        <a href="#" class="view-btn">Detayları Gör</a>
-                    </div>
+                    <img src="https://via.placeholder.com/600x400" alt="Proje 2">
                 </div>
                 <div class="project-info">
-                    <div class="project-meta">
-                        <span class="project-category">Yazılım</span>
-                        <span class="project-date">2023</span>
+                    <h3>Portfolyo Sitesi</h3>
+                    <p>Yaratıcı profesyoneller için özelleştirilebilir portfolyo sitesi şablonu.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
                     </div>
-                    <h3 class="project-title">Enerji Yönetim Sistemi</h3>
-                    <p class="project-description">Yenilenebilir enerji kaynakları için optimizasyon yazılımı</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">MATLAB</span>
-                        <span class="tag">Veri Analizi</span>
-                    </div>
+                    <a href="#" class="project-link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
-            <!-- Proje 3 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/project3.jpg" alt="3D Yazıcı Kontrol Sistemi" loading="lazy">
-                    <div class="project-hover">
-                        <a href="#" class="view-btn">Detayları Gör</a>
-                    </div>
+                    <img src="https://via.placeholder.com/600x400" alt="Proje 3">
                 </div>
                 <div class="project-info">
-                    <div class="project-meta">
-                        <span class="project-category">Mekatronik</span>
-                        <span class="project-date">2022</span>
+                    <h3>Mobil Uygulama UI</h3>
+                    <p>Fitness takip uygulaması için tasarlan modern ve kullanıcı dostu arayüz.</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>Prototyping</span>
                     </div>
-                    <h3 class="project-title">3D Yazıcı Kontrol Sistemi</h3>
-                    <p class="project-description">Özelleştirilmiş 3D yazıcı kontrol yazılımı ve donanımı</p>
-                    <div class="project-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">3D Modelleme</span>
-                        <span class="tag">Elektronik</span>
-                    </div>
+                    <a href="#" class="project-link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-        </div>
-        
-        <div class="view-all" style="padding-left: 50px;">
-            <a href="#" class="btn-outline">Tüm Projeleri Görüntüle</a>
         </div>
     </div>
 </section>
-<!-- İletişim Bölümü -->
-<section id="contact" class="contact-section">
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
     <div class="container">
         <h2 class="section-title">İletişim</h2>
         <div class="contact-content">
             <div class="contact-info">
                 <h3>Benimle İletişime Geçin</h3>
-                <p>Yeni projeler, işbirlikleri veya sorularınız için bana ulaşabilirsiniz.</p>
+                <p>Yeni projeler, iş teklifleri veya sadece merhaba demek için bana ulaşabilirsiniz.</p>
                 
-                <div class="contact-items">
+                <div class="contact-details">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>mertander123@gmail.com</span>
+                        <span>mert@example.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+90 551 069 64 82</span>
+                        <span>+90 555 123 45 67</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -184,32 +170,38 @@
                 </div>
                 
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Adınız" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="E-posta Adresiniz" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Konu">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Mesajınız" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Gönder</button>
-                </form>
-            </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Adınız" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="E-posta" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Konu">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Mesajınız" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Gönder <i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
     </div>
 </section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Mert Ander. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
 
 <script src="./app.js"></script>
 <script src="./particles.js"></script>
